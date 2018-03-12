@@ -110,10 +110,18 @@ Reports are included, see the Project Report to know more!
 
 >  Contributors/People
 
-| <a href="https://github.com/VARADSP" target="_blank">**Varad Parlikar**</a> | <a href="http://fvcproductions.com" target="_blank">**Vinay Rathi**</a> | <a href="http://fvcproductions.com" target="_blank">**Sanket Pujari**</a> |<a href="http://fvcproductions.com" target="_blank">**Abhijit Pedhe**</a>
-| :---: |:---:| :---:|
-| [![FVCproductions](vsp.jpg)](https://github.com/VARADSP)    | [![FVCproductions](vinayrathi1.jpg)](http://fvcproductions.com) | [![FVCproductions](sanketpujari1.jpg)](http://fvcproductions.com)  | [![FVCproductions](abhijitpedhe1.jpg)](http://fvcproductions.com)
-| <a href="https://github.com/VARADSP" target="_blank">`https://github.com/VARADSP`</a> | <a href="http://github.com/fvcproductions" target="_blank">`https://github.com/vinayrathi`</a> | <a href="http://github.com/fvcproductions" target="_blank">`https://github.com/sanketpujari`</a> | <a href="http://github.com/fvcproductions" target="_blank">`https://github.com/abhijitpedhe`</a> |
+| <a href="https://github.com/VARADSP" target="_blank">**Varad Parlikar**</a> |<a href="https://github.com/VARADSP" target="_blank">`https://github.com/VARADSP`</a>|  [![FVCproductions](vsp.jpg)](https://github.com/VARADSP)    
+|  
+[![FVCproductions](vinayrathi1.jpg)](http://fvcproductions.com) |<a href="http://fvcproductions.com" target="_blank">**Vinay Rathi**</a> <a href="http://github.com/fvcproductions" target="_blank">`https://github.com/vinayrathi`</a> |
+
+
+ <a href="http://fvcproductions.com" target="_blank">**Sanket Pujari**</a> | [![FVCproductions](sanketpujari1.jpg)](http://fvcproductions.com)   <a href="http://github.com/fvcproductions" target="_blank">`https://github.com/sanketpujari`</a>
+ |
+
+ <a href="http://fvcproductions.com" target="_blank">**Abhijit Pedhe**</a>
+|
+|    [![FVCproductions](abhijitpedhe1.jpg)](http://fvcproductions.com)
+|   | <a href="http://github.com/fvcproductions" target="_blank">`https://github.com/abhijitpedhe`</a> |
 
 
 ---
