@@ -1,0 +1,330 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="AdminLogin_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+           <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stack Of Projects</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   
+     <!-- Sign In Links-->
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="assets/css/signinstyle.css">
+ <script>
+     $(function () {
+         $('a').each(function () {
+             if ($(this).prop('href') == window.location.href) {
+                 $(this).addClass('current');
+             }
+         });
+     });
+ </script>
+    <style>
+        a.current{
+            background-color:red;
+            color:white;
+        }
+          #box{
+		background:#333;
+		color:#fff;
+		width:500px;
+		height:90px;
+		padding:40px;
+		text-align:center;
+		
+		
+		}
+        a.current{
+            background-color:red;
+            color:white;
+        }
+        .handle{
+
+            position:relative;
+            float:right;
+            text-shadow:inherit;
+            padding:20px;
+
+        }
+        body{
+            width:100%;
+	margin-left:auto;
+	margin-right:auto;
+        }
+      
+    </style>
+   
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <!--     <div id="wrapper">     
+                     
+         <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                 
+          <h3 style="margin-left:650px;margin-top:30px;color:#ffd88e;position:absolute;" id="Title">Stack Of Projects</h3>
+                <a href="logout.aspx" class="btn btn-info" style="float:right;background-color:burlywood">Logout</a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#">
+                      <img src="images/logo1.jpg" style="height:60px;width:150px;padding-bottom:10px;position:absolute;" /> 
+                    </a>
+                    
+                </div>
+              
+                
+            </div>
+        </div> -->
+          <div id="wrapper">
+      
+
+         <div class="navbar navbar-inverse navbar-fixed-top">
+                
+            <div class="adjust-nav">
+
+
+
+                <h3 style="margin-left:40px;margin-top:30px;color:#ffd88e;position:absolute;" id="Title">Stack Of Projects</h3>
+
+                <br />
+
+                        <a href="logout.aspx" class="btn btn-info" style="float:right;background-color:darkorange;border:none "><i class="fa fa-apple "></i>Logout</a>
+        
+                           <a  href="contact.aspx" class="handle" style="color:#f39c12;border:none"><h2><i class="fa fa-edit "></i>CONTACT US  <span class="badge"></h2></span></a>
+             
+                         <a  href="projects1.aspx" class="handle" style="color:#f39c12;border:none"><h2><i class="fa fa-table "></i>PROJECT LIST  <span class="badge"></h2></span></a>
+                   
+                    <a href="viewusers.aspx" class="handle" style="color:#f39c12;border:none"><h2><i class="fa fa-android "></i>VIEW USERS  <span class="badge"></span></h2></a>
+                
+                 <a  href="home.aspx"  class="handle" style="color:#f39c12;border:none"><h2><i class="fa fa-desktop "></i>HOME <span class="badge"></span></h2></a> 
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                           
+                    </button>
+                    <a class="navbar-brand" href="#">
+                     <!--   <div id="box"><h1>Hello World</h1></div>  NEW EXPERIMENTS --> 
+    
+                    </a>
+                    
+                </div>
+             
+                
+      
+    
+            </div>
+
+        
+     
+                		
+
+        </div>
+
+              <div class="glyphicon-home ">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+        <!-- /. NAV TOP  -->
+   <!--     <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse" style="position:fixed;overflow-y:scroll;width:20%;">
+                <ul class="nav" id="main-menu">
+                 
+
+
+                    <li >
+                        <a href="home.aspx" ><i class="fa fa-desktop "></i>HOME <span class="badge"></span></a>
+                    </li>
+                   
+                    <br />
+                    <br />
+                    
+                    <li>
+                        <a href="projects1.aspx"><i class="fa fa-table "></i>PROJECT LIST  <span class="badge"></span></a>
+                    </li>
+                    <br />
+                    <br />
+                    
+                    <li>
+                        <a href="contact.aspx"><i class="fa fa-edit "></i>CONTACT US  <span class="badge"></span></a>
+                    </li>
+
+
+ 
+                    <br />
+                    <br />
+                      <li>
+                        <a href="viewusers.aspx"><i class="fa fa-table "></i>VIEW USERS  <span class="badge"></span></a>
+                    </li>
+                 
+                    
+                </ul>
+                            </div>
+
+        </nav>  -->
+        <!-- /. NAV SIDE  -->
+      <!--  <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-lg-12">
+                     <h2>WELCOME TO Stack Of Projects</h2>   
+                    </div>
+                </div>             -->
+                  
+  
+       
+                                        
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first">
+      <h6 class="title">Follow Us On</h6>
+      <ul class="faico clear" style="display:flexbox">
+        <li ><a class="faicon-facebook" href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+        <li ><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="title">Address</h6>
+      <ul class="nospace linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+          Railway Station  , Aurangabad, 431001
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +91 9158194657</li>
+        <li><i class="fa fa-fax"></i> +91 (123) 456 7890</li>
+        <li><i class="fa fa-envelope-o"></i> sop@gmail.com</li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <h6 class="title">Our Blogs</h6>
+      <ul class="nospace linklist">
+        <li>
+          <article>
+            <h2 class="nospace font-x1"><a href="#">Blogs At Website</a></h2>
+            
+            <p class="nospace">Checkout the webisite for latest technology reference <br /> <a href="http://debuggingbug.wordpress.com">debuggingbug.wordpress.com</a></p>
+          </article>
+        </li>
+                 <img src="images/logo1.jpg" style="height:60px;width:150px;padding-bottom:10px;position:absolute;" />
+
+      </ul>
+    </div>
+                 
+    <!-- ################################################################################################ -->
+  </footer>
+</div>
+
+                <div class="footer">
+      
+    
+            <div class="row">
+                <div class="col-lg-12" >
+                    &copy;  2017 StackOfProject.com | Design by: <a href="http://StackOfProject.com" style="color:#fff;" target="_blank">www.StackOfProject.com</a>
+                </div>
+            </div>
+        </div>
+       
+      <script>
+
+
+
+          $('.handle').click(function (e) {
+              var url = window.location;
+              $('.navbar .nav').find('.active-link').removeClass('active-link');
+              $('.navbar .nav li a').each(function () {
+                  if (this.href == url) {
+                      $(this).parent('li').addClass('active-link');
+                  }
+              }
+              );
+
+
+
+
+              var spans = $("span");
+              $(this).find(spans).html('Active');
+              $(this).parent('li').addClass('active-link');
+
+
+
+          });
+
+
+
+
+          $('.wrapper').slideUp(1000);
+          $('.wrapper').fadeIn(2000);
+
+          $('#wrapper').slideUp(5);
+          $('#wrapper').fadeIn(1000);
+
+
+          $(function () {
+              var documentEl = $(document),
+
+              fadeElem = $('.row');
+
+              documentEl.on('scroll', function () {
+                  var currScrollPos = documentEl.scrollTop();
+
+                  fadeElem.each(function () {
+
+                      var $this = $(this),
+                      elemOffsetTop = $this.offset().top;
+                      if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos - elemOffsetTop) / 400);
+
+
+
+
+
+                  });
+
+
+              });
+          });
+
+
+                </script>
+          
+
+     <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    </form>
+</body>
+</html>

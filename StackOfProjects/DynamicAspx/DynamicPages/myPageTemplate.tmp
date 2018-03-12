@@ -1,0 +1,42 @@
+<%@ Page Language="C#" CodeFileBaseClass="PageBase" AutoEventWireup="true" CodeFile ="myPageCode.cs" 
+Inherits= "myPageCode" PageID="[ID]" MetaTitle="[MetaTitle]" MetaKeywords="[MetaKeywords]" %>
+<%@ Register TagPrefix="myPageHeader" TagName="PgHeader" Src="myTemplates/PageHeader.ascx" %>
+<%@ Register TagPrefix="myPageFooter" TagName="PgFooter" Src="myTemplates/PageFooter.ascx" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table width="100%">
+            <tr>
+                <td colspan="2">
+                    <myPageHeader:PgHeader ID="PgHeader1" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>
+                         <%=MetaTitle%></h2>
+                </td>
+            </tr>
+            <tr class=content>
+                <td colspan="2">
+                    [PageContent]
+                </td>
+            </tr>
+            <tr>
+            <td colspan="2">
+                <myPageFooter:PgFooter ID="PgFooter1" runat="server" />
+            </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
+
+

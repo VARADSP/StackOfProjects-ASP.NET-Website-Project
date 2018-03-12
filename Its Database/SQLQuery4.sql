@@ -1,0 +1,1 @@
+﻿insert into FEProjects values(2,'Gadjects','C++','Smitesh Badnapurkar','23/08/2017','~/FEProjects/gadjects.aspx');

@@ -1,0 +1,1 @@
+﻿update PendingProjects set status='Approved' where collegename='JNEc'; 
